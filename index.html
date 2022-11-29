@@ -125,7 +125,7 @@
 
     // console assert
     errorBtns[4].addEventListener('click', () => {
-      console.log('log message');
+      console.assert(1==0, '1!=0');
     });
 
     // console clear
@@ -189,6 +189,19 @@
       console.log('finally')
     }
 
+    class NewError extends Error {
+      constructor(message){
+        super(message);
+        this.name = 'NewError';
+      }
+    }
+
+    try {
+      throw new NewError('error message');
+    } catch (e){
+      console.log(e.message);
+      console.log(e.name);
+    }
 
   </script>
 </body>
