@@ -102,6 +102,94 @@
 
     // Start your code here
     // You may move this JS to another file if you wish
+    
+    // console log
+    errorBtns[0].addEventListener('click', () => {
+      console.log('log message');
+    });
+
+    // console error
+    errorBtns[1].addEventListener('click', () => {
+      console.error('error message');
+    });
+
+    // console count
+    errorBtns[2].addEventListener('click', () => {
+      console.count();
+    });
+
+    // console warn
+    errorBtns[3].addEventListener('click', () => {
+      console.warn('warning message');
+    });
+
+    // console assert
+    errorBtns[4].addEventListener('click', () => {
+      console.log('log message');
+    });
+
+    // console clear
+    errorBtns[5].addEventListener('click', () => {
+      console.clear();
+    });
+
+    // console dir
+    errorBtns[6].addEventListener('click', () => {
+      console.dir(errorBtns[6]);
+    });
+
+    // console dirxml
+    errorBtns[7].addEventListener('click', () => {
+      console.dirxml(errorBtns[7]);
+    });
+
+    // console group start
+    errorBtns[8].addEventListener('click', () => {
+      console.group();
+    });
+
+    // console group end
+    errorBtns[9].addEventListener('click', () => {
+      console.groupEnd();
+    });
+
+    // console table
+    errorBtns[10].addEventListener('click', () => {
+      console.table(errorBtns);
+    });
+    
+    // start timer
+    errorBtns[11].addEventListener('click', () => {
+      console.time();
+    });
+
+    // end timer
+    errorBtns[12].addEventListener('click', () => {
+      console.timeEnd();
+    });
+
+    // console trace
+    errorBtns[13].addEventListener('click', () => {
+      function a(){
+        console.trace();
+      }
+      a();
+    });
+
+    // trigger a global error
+    errorBtns[14].addEventListener('click', () => {
+      invalidcode;
+    });
+
+    try {
+      badcode;
+    } catch (e) {
+      console.warn('bad code');
+    } finally {
+      console.log('finally')
+    }
+
+
   </script>
 </body>
 
